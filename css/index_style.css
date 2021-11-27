@@ -13,7 +13,7 @@ body {
   line-height: 2;
   font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   /* >>TODO */
-  background-color: #dc143c;
+  background-color: #f0e68c  ;
 }
 
 *,
@@ -57,7 +57,7 @@ body {
   padding: 10px 10px;
   display: flex;/* 子要素をflexboxで揃える */
   align-items: center;  /* 子要素をflexboxにより中央に配置する */
-  background-color: #fff;
+  background-color: #fff ;
   box-shadow: 0 0 10px 1px #858360;
 
 }
@@ -84,6 +84,20 @@ body {
 }
 
 /* >>TODO */
+.about-abcd{
+  position relative;
+}
+
+.about-abcd p{
+  position:absolute;
+  color:white;
+  top:50;
+  left:50;
+}
+
+.about-abcd img{
+  width:100%;
+}
 
 
 /* --------------------------------
@@ -107,6 +121,7 @@ body {
   width: 80%;
   object-fit: cover;
 }
+
 
 /* --------------------------------
  * merit
@@ -191,10 +206,11 @@ body {
   display: flex;
 }
 
-.flow-item {
+.flow-item
+{
+  
   flex: 1;
   margin: 10px;
-  border: solid 1px #666;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0px 5px 10px 0px  #858360; 
@@ -203,6 +219,19 @@ body {
 .flow-item p {
   padding: 50px 0;
 }
+
+/* --------------------------------
+ * arrow-r
+ * -------------------------------- */
+
+ .Arrow-Right {
+  border-top: solid 10px #5bc8ac;
+  border-right: solid 10px #5bc8ac;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+}
+ 
 
 /* --------------------------------
  * faq
@@ -223,6 +252,28 @@ body {
 
 .faq-item p {
   margin: 30px;
+}
+
+/* --------------------------------
+ * box
+ * -------------------------------- */
+
+.box
+{
+    position: relative;
+}
+
+.box div.text
+{
+    position: absolute;
+    width: 100%;
+    left: 0; 
+    top: calc(50% - 25px); 
+    text-align: center; 
+    color: darkblue; 
+    font-weight: bold; 
+    font-size: 50px;
+    line-height: 50px;
 }
 
 /* --------------------------------
